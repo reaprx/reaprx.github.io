@@ -470,7 +470,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="each-client-item">
                                 <div class="mh-client-item dark-bg black-shadow-1">
                                     <img src="assets/images/r3.png" alt="" class="img-fluid">
-                                     <p> This is for you. Send me a review to display here.</p>
+                                     <p> Send me a review to display here.</p><br>
                                      <h4> NAME </h4>
                                      <span>_________</span>
                                 </div>
@@ -559,7 +559,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </body>
 
+
+<script language=JavaScript>
+	<!--
 	
+	//Disable right mouse click Script
+	//By Geek Site.in
+	
+	
+	var message="❗ You can't do it here!";
+	
+	///////////////////////////////////
+	function clickIE4(){
+	if (event.button==2){
+	alert(message);
+	return false;
+	}
+	}
+	
+	function clickNS4(e){
+	if (document.layers||document.getElementById&&!document.all){
+	if (e.which==2||e.which==3){
+	alert(message);
+	return false;
+	}
+	}
+	}
+	
+	if (document.layers){
+	document.captureEvents(Event.MOUSEDOWN);
+	document.onmousedown=clickNS4;
+	}
+	else if (document.all&&!document.getElementById){
+	document.onmousedown=clickIE4;
+	}
+	
+	document.oncontextmenu=new Function("alert(message);return false")
+	
+	// --> 
+	</script>
+		
 	
 	
 	
